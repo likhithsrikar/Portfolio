@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W.S. Likhith | Java Full Stack Developer</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .card {
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .btn-primary {
+      background-color: #2C7865;
+      border-color: #2C7865;
+    }
+    .btn-primary:hover {
+      background-color: #0A2647;
+      border-color: #0A2647;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-dark text-white py-3">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">W.S. Likhith</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-primary text-white py-5" style="background: linear-gradient(135deg, #0A2647, #2C7865);">
+    <div class="container text-center py-5">
+      <h1 class="display-4">Building Scalable and User-Friendly Web Applications</h1>
+      <p class="lead">Hi, I'm W.S. Likhith, a passionate Java Full Stack Developer.</p>
+      <a href="#projects" class="btn btn-light btn-lg me-3">View My Work</a>
+      <a href="#" class="btn btn-outline-light btn-lg">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a Java Full Stack Developer with expertise in building robust and scalable web applications. I specialize in Java, Spring Boot, Hibernate, React, and databases like MySQL and MongoDB. I love solving problems and working in collaborative environments.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Frontend</h5>
+              <p class="card-text">HTML, CSS, JavaScript, React, Bootstrap</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Backend</h5>
+              <p class="card-text">Java, Spring Boot, Hibernate, REST APIs</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Databases</h5>
+              <p class="card-text">MySQL, MongoDB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Java Quiz Application</h5>
+              <p class="card-text">A Java-based quiz application with a user-friendly interface and real-time scoring system.</p>
+              <a href="#" class="btn btn-primary">Live Demo</a>
+              <a href="#" class="btn btn-secondary">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">YouTube Transcription Summarizer</h5>
+              <p class="card-text">A tool that uses DistilBART and Vosk to transcribe and summarize YouTube videos.</p>
+              <a href="#" class="btn btn-primary">Live Demo</a>
+              <a href="#" class="btn btn-secondary">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Food Recipe App</h5>
+              <p class="card-text">A ReactJS-based application for discovering and sharing food recipes.</p>
+              <a href="#" class="btn btn-primary">Live Demo</a>
+              <a href="#" class="btn btn-secondary">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2023 W.S. Likhith. All Rights Reserved.</p>
+      <p>
+        <a href="https://github.com/likhithsrikar" class="text-white me-3">GitHub</a>
+        <a href="#" class="text-white me-3">LinkedIn</a>
+        <a href="#" class="text-white">Twitter</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
