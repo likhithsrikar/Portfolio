@@ -29,6 +29,19 @@
       background-color: #0A2647;
       border-color: #0A2647;
     }
+    .profile-photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      margin-bottom: 20px;
+      cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+    }
+    .modal-img {
+      width: 100%;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
@@ -55,12 +68,25 @@
   <!-- Hero Section -->
   <section class="bg-primary text-white py-5" style="background: linear-gradient(135deg, #0A2647, #2C7865);">
     <div class="container text-center py-5">
+      <!-- Add your photo here with a data-bs-toggle attribute -->
+      <img src="IMG_20250117_205340.jpg" alt="W.S. Likhith" class="profile-photo" data-bs-toggle="modal" data-bs-target="#photoModal">
       <h1 class="display-4">Building Scalable and User-Friendly Web Applications</h1>
       <p class="lead">Hi, I'm W.S. Likhith, a passionate Java Full Stack Developer.</p>
       <a href="#projects" class="btn btn-light btn-lg me-3">View My Work</a>
-      <a href="#" class="btn btn-outline-light btn-lg">Download Resume</a>
+      <a href="https://docs.google.com/document/d/1JLCIApwO-YTGjpsYQQUyd1VNuAvqaObTZ91S3cg74ls/edit?usp=drive_link" class="btn btn-outline-light btn-lg">Download Resume</a>
     </div>
   </section>
+
+  <!-- Modal for Maximizing the Photo -->
+  <div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img src="IMG_20250117_205340.jpg" alt="W.S. Likhith" class="modal-img">
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- About Me -->
   <section id="about" class="py-5">
